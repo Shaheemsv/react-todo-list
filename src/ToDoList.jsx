@@ -58,7 +58,7 @@ function ToDoList(){
                 <ul>
                 {tasks.map((task, index) => (
                     <li key={index} className="listitem">
-                        <input type="checkbox" onClick={() => handleCheckboxChange(index)} />
+                        <input type="checkbox" className="rounded-checkbox" onClick={() => handleCheckboxChange(index)} />
                         <label className="taskname"
                             style={{ textDecoration: task.completed ? "line-through" : "none" }}>
                         {task.text}
